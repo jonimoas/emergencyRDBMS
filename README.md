@@ -6,3 +6,7 @@ From the UI, the user can perform basic selects, joins and write sql queries to 
 
 The following libraries were used:
 
+SequelizeORM   - https://sequelize.org/
+ExpressJS      - https://expressjs.com/
+sequelize-auto - https://github.com/sequelize/sequelize-auto
+Vuecidity      - https://vuecidity.wemakesites.net/
