@@ -11,14 +11,14 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mariadb": "^2.0.5",
-    "mysql": "^2.17.1",
-    "mysql2": "^1.6.5",
+    "mariadb": "^2.4.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^1.7.0",
     "pg": "^6.4.2",
-    "pg-hstore": "^2.3.2",
-    "sequelize": "^5.8.7",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.22.3",
     "sequelize-auto": "^0.4.29",
-    "sqlite3": "^4.0.8",
-    "tedious": "^6.1.1"
+    "sqlite3": "^4.2.0",
+    "tedious": "^6.7.0"
   }
 }
