@@ -66,6 +66,8 @@ export default {
           window.location.origin +
           ":"+mainPort+"/api/createSession?db=" +
           this.database +
+          "&host="+
+          this.host+
           "&dialect=" +
           this.dialect +
           "&user=" +
@@ -79,6 +81,8 @@ export default {
           window.location.origin +
           ":"+mainPort+"/api/createSession?db=" +
           this.database +
+          "&host="+
+          this.host+
           "&dialect=" +
           this.dialect +
           "&user=" +
