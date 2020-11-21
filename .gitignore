@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+backend/db.json
+backend/package-lock.json
+editor/package-lock.json
+db.json
+package-lock.json
+start.bat

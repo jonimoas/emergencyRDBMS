@@ -4,6 +4,7 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 class VueState {
   tableList = [];
+  keyList = [];
   logged = false;
   session = "";
 }
@@ -23,7 +24,10 @@ export default new Vuex.Store({
     },
     session(state, newSession) {
       state.session = newSession;
-    }
+    },
+    newKeys(state, newList) {
+      state.keyList = newList;
+    },
   },
   actions: {},
   getters: {
@@ -35,6 +39,9 @@ export default new Vuex.Store({
     },
     getSession(state) {
       return state.session;
-    }
-  }
+    },
+    getKeys(state) {
+      return state.keyList;
+    },
+  },
 });

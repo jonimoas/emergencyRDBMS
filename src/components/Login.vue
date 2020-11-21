@@ -17,7 +17,7 @@
       <vc-text type="text" :placeholder="'Port'" v-model="port" name="port"></vc-text>
       <br />
       <vc-text type="text" :placeholder="'User'" v-model="user" name="user"></vc-text>
-      <vc-text type="text" :placeholder="'Password'" v-model="password" name="password"></vc-text>
+      <vc-text type="password" :placeholder="'Password'" v-model="password" name="password"></vc-text>
       <vc-text type="text" :placeholder="'Database'" v-model="database" name="database"></vc-text>
       <br />
       <vc-button @click="login">Login</vc-button>
@@ -60,11 +60,11 @@ export default {
       console.log(this.dialect);
     },
     login: async function() {
+      let mainPort = this.$cookies.get("rdbmsport");
+      console.log(window.location)
       console.log(
-        window.location.href.split("//")[0] +
-          "//" +
-          window.location.href.split("//")[1].split(":")[0] +
-          ":16000/api/createSession?db=" +
+          window.location.origin +
+          ":"+mainPort+"/api/createSession?db=" +
           this.database +
           "&dialect=" +
           this.dialect +
@@ -76,10 +76,8 @@ export default {
           this.port
       );
       let response = await fetch(
-        window.location.href.split("//")[0] +
-          "//" +
-          window.location.href.split("//")[1].split(":")[0] +
-          ":16000/api/createSession?db=" +
+          window.location.origin +
+          ":"+mainPort+"/api/createSession?db=" +
           this.database +
           "&dialect=" +
           this.dialect +
