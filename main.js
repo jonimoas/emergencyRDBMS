@@ -50,6 +50,8 @@ app.get("/api/createSession", async function(req, res, next) {
     let auto;
     let thisdb = new sql(req.query.db, req.query.user, req.query.password, {
       dialect: req.query.dialect,
+      host: req.query.host,
+      port: req.query.port,
     });
     auto = new sqla(req.query.db, req.query.user, req.query.password, {
       host: req.query.host,
