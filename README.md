@@ -14,7 +14,7 @@ hosts, and the EXT_PORT which is the port that shows outside, after a possible r
 
 The following libraries were used:
 
-SequelizeORM   - https://sequelize.org/
-ExpressJS      - https://expressjs.com/
-sequelize-auto - https://github.com/sequelize/sequelize-auto
-Vuecidity      - https://vuecidity.wemakesites.net/
+    SequelizeORM   - https://sequelize.org/
+    ExpressJS      - https://expressjs.com/
+    sequelize-auto - https://github.com/sequelize/sequelize-auto
+    Vuecidity      - https://vuecidity.wemakesites.net/
